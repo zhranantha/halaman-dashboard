@@ -1,0 +1,738 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100%;
+    background: #ffffff;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin: 24px;
+}
+
+.logo .menu-icon {
+    color: #333;
+    font-size: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.logo .logo-name {
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.sidebar {
+    flex-grow: 1;
+    padding: 20px 0;
+}
+
+.sidebar .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.sidebar-content .list {
+    list-style: none;
+}
+
+.list .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.lists .nav-link:hover {
+    background-color: #407ef4;
+}
+
+.nav-link .icon {
+    margin-right: 14px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.nav-link .link {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+    color: #fff;
+}
+
+/* Styling dasar */
+.bottom-content {
+    background-color:#407ef4;
+    padding: 0px;
+}
+
+.lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    position: relative;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+/* Dropdown styling */
+.dropdown-content {
+    display: none; /* Default disembunyikan */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #e7e7e7;
+}
+
+/* Tampilkan dropdown saat di-hover */
+.list.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.bottom-content {
+    margin-top: auto;
+}
+
+.bottom-content .lists {
+    list-style: none;
+    padding: 0;
+}
+
+.overlay {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 5px;
+    left: 40px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 15px;
+    transition: margin-left 0.3s ease;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 5px;
+    width: 1500px;
+}
+
+.search-container input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 8px;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.header-icons {
+    display: flex;
+    align-self: center;
+}
+
+.header-icons .icon {
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: #707070;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.profile-icon img {
+    height: auto;
+    width: 100%;
+}
+
+main {
+    margin-left: 260px;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: calc(50% - 10px);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blue {
+    background-color: #4A90E2;
+}
+
+.light-blue {
+    background-color: #A4D8E1;
+}
+
+.purple {
+    background-color: #9B5986;
+}
+
+.green {
+    background-color: #1ABC9C;
+}
+
+.amount {  
+    font-size: 24px;  
+    font-weight: bold;  
+}  
+
+.saved {  
+    font-size: 14px;  
+    margin-top: 10px;  
+}
+
+.charts-container {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+    margin-top: 20px;  
+    padding: 20px;
+}  
+
+.chart {  
+    flex: 1;  
+    margin-right: 20px;  
+    padding: 20px;  
+    border-radius: 10px;  
+    background-color: #48eef1;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}  
+
+.chart-controls {  
+    display: flex;  
+    justify-content: space-between;  
+    margin-bottom: 20px;  
+}  
+
+.chart-placeholder {  
+    height: 200px; /* Tinggi untuk placeholder grafik */  
+    background-color: #ffffff; /* Warna latar belakang untuk placeholder */  
+    border-radius: 10px;  
+}  
+
+.chart-placeholder canvas{
+    color: white;
+}
+
+.budget-container {  
+    margin-top: 20px;
+    display: flex;  
+    flex-direction: column;  
+    flex: 1;
+}  
+
+.budget {  
+    background-color: #f9f9f9;  
+    border-radius: 10px;  
+    padding: 20px;  
+    margin-bottom: 20px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    text-align: center;  
+}  
+
+.progress-circle {  
+    width: 100px;  
+    height: 100px;  
+    border-radius: 50%;  
+    border: 10px solid #e0e0e0;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    position: relative;  
+    margin: 0 auto 10px;  
+}  
+
+.progress-circle span {  
+    position: absolute;  
+    font-size: 24px;  
+    font-weight: bold;  
+}
+
+.chart-placeholder {
+    width: 100%;
+    height: 400px; /* Anda bisa mengubah ini sesuai kebutuhan */
+    background-color: rgba(240, 240, 240, 0.9); /* Warna latar belakang kontainer */
+    border-radius: 8px; /* Rounding pada sudut */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.pie-chart {  
+    width: 300px;   /* Anda bisa mengubah ukuran sesuai kebutuhan */  
+    height: 300px;  /* Tinggi yang sama dengan lebar untuk memastikan bentuk lingkaran */  
+    background-color: #e0e0e0; /* Warna latar belakang saat tidak ada data */  
+    border-radius: 0; /* Membuatnya berbentuk lingkaran */  
+    position: relative; /* Untuk absolute positioning dari label */  
+    margin: 0 auto; /* Memusatkan di dalam kontainer */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan ringan untuk efek kedalaman */  
+}  
+
+.pie-chart .label {  
+    position: absolute; /* Menempatkan label di tengah pie chart */  
+    top: 50%; /* Menyusun ke tengah vertikal */  
+    left: 50%; /* Menyusun ke tengah horizontal */  
+    transform: translate(-50%, -50%); /* Memindahkan label ke tengah */  
+    font-size: 16px; /* Ukuran font label */  
+    font-weight: bold; /* Menebalkan teks */  
+    color: #333; /* Mengatur warna teks */  
+}
+
+@media (max-width: 768px) {  
+    .pie-chart {  
+        width: 200px;  
+        height: 200px;  
+    }  
+}
+
+.card-container .card, .charts-container {
+    will-change: transform, opacity;
+}
+
+.card-container .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container .card:hover {
+    transform: scale(1.05); /* Membesarkan ukuran */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+.charts-container .chart {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.charts-container .chart:hover {
+    transform: scale(1.05); /* Membesarkan ukuran */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Update 1 */
+    background: #407ef4;
+    padding: 6px 11px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active {
+    width: 240px;
+}
+
+.sidebar.closed { /* Update 4 */
+    width: 88px;
+
+}
+
+.sidebar .logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo .menu-icon {
+    color: #0000ff;
+    font-size: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.logo .logo-name {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 2; /* Update 2 */
+    transition: all 0.5s ease;
+}
+
+.sidebar.active .logo .logo-name {
+    opacity: 1;
+}
+
+.sidebar.closed .logo .logo-name, /* Update 4 */
+.sidebar.closed li .nav-link .link {
+    opacity: 0;
+}
+
+.sidebar .nav-list {
+    margin-top: 20px;
+    height: 100%;
+}
+
+.sidebar li {
+    position: relative;
+    margin: 8px 0;
+    list-style: none;
+}
+
+.sidebar li .nav-link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background: rgba(117, 158, 254, 0.912);
+}
+
+.sidebar li .nav-link:hover {
+    background: #fff;
+}
+
+
+.sidebar li .nav-link .icon {
+    min-width: 60px;
+    border-radius: 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.sidebar li .nav-link .link {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 1; /* Update 3 */
+    transition: 0.4s;
+}
+
+.sidebar.active li .nav-link .link {
+    opacity: 1;
+}
+
+.sidebar li .nav-link:hover .icon,
+.sidebar li .nav-link:hover .link {
+    color: #61a3ff;
+}
+
+
+/* Gaya dasar untuk navigasi */
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+}
+
+/* Gaya untuk ikon */
+.icon {
+    margin-right: 8px;
+}
+
+/* Gaya untuk dropdown */
+.dropdown {
+    position: relative;
+    list-style: none;
+}
+
+/* Style dasar untuk nav dan dropdown */
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .list {
+    position: relative;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Dropdown Content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .dropdown-content li {
+    list-style-type: none;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Hover state for dropdown */
+  .list.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+main {
+    flex: 1;
+    padding: 20px;
+    margin-left: 240px; /* Update 5 */
+    transition: margin-left 0.5s ease;
+}
+
+main.shift {
+    margin-left: 78px; /* Update 5 */
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+    }
+    .sidebar.active {
+        width: 220px;
+    }
+    main {
+        margin-left: 60px;
+    }
+    main.shift {
+        margin-left: 220px;
+    }
+}
+
+/* Lebar sidebar saat tertutup */
+.sidebar.closed {
+    width: 88px; /* Lebar sidebar tertutup */
+    padding: 0;
+}
+
+.sidebar.closed .nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 5px 10px;
+    margin-right: 10px;/* Spasi atas-bawah supaya ikonnya simetris */
+    border-radius: 12px;
+    background: #4676f860; /* Warna background default */
+    transition: background 0.3s;
+}
+
+.sidebar.closed .icon {
+    color: #ffffff; /* Warna ikon */
+    margin-left: 20px;
+    width: 100%; /* Isi seluruh lebar kontainer */
+    margin-top: 10px;
+}
+
+/* Hover efek */
+.sidebar.closed .nav-link:hover {
+    background: #fff;
+}
+
+.sidebar.closed .nav-link:hover .icon {
+    color: #61a3ff;
+}
+
+/* Gaya awal untuk header saat sidebar terbuka */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 5px;
+    left: 280px; /* Posisi header saat sidebar terbuka */
+    right: 20px;
+    z-index: 1000;
+    border-radius: 15px;
+    transition: left 0.3s ease, width 0.3s ease;
+    width: calc(100% - 300px); /* Sesuaikan lebar */
+}
+
+/* Saat sidebar tertutup, header melebar */
+.header.header-closed {
+    left: 120px; /* Posisi header saat sidebar tertutup */
+    width: calc(87%); /* Lebar header lebih besar */
+}
+
+/* Gaya tambahan untuk elemen-elemen dalam header */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+        left: 70px;
+        right: 10px;
+        width: calc(100% - 80px);
+    }
+
+    .header.header-closed {
+        left: 60px;
+        width: calc(100% - 70px);
+    }
+}
